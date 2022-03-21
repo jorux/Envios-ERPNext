@@ -54,7 +54,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-03-20 12:39:58.113958",
+ "modified": "2022-03-20 19:54:31.855922",
  "modified_by": "Administrator",
  "module": "Envios Erpnext",
  "name": "Envio",
@@ -75,7 +75,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

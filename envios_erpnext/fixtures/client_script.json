@@ -4,10 +4,10 @@
   "doctype": "Client Script",
   "dt": "Sales Invoice",
   "enabled": 1,
-  "modified": "2022-03-20 19:43:26.197882",
+  "modified": "2022-03-20 19:56:47.339024",
   "module": "Envios Erpnext",
   "name": "Sales Invoice-Form",
-  "script": "frappe.ui.form.on('Sales Invoice', {\n\trefresh(frm) {\n\t {\n      frm.add_custom_button(\n        __(\"Mi Custom Button\"),\n        function () {\n          console.log(\"button clicked\");// clickea bot\u00f3n\n          // aqui va lo de crear el doctype\n        },\n        __(\"Create\")\n      );\n    }\t\n\t}\n})",
+  "script": "frappe.ui.form.on('Sales Invoice', {\n\trefresh(frm) {\n\t {\n      frm.add_custom_button(\n        __(\"Crear Envio\"),\n        function () {\n          console.log(\"button clicked\");// clickea bot\u00f3n\n          frappe.new_doc(\"Envio\")// aqui va lo de crear el doctype\n        },\n        __(\"Create\")\n      );\n    }\t\n\t}\n})",
   "view": "Form"
  }
 ]
