@@ -6,12 +6,25 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "datos_section",
   "fecha",
   "naming_series",
   "amended_from",
   "sales_invoice",
+  "column_break_6",
   "instrucciones_especiales",
-  "customer"
+  "customer",
+  "items_section",
+  "paquetes_de_envio",
+  "datos_transporte_section",
+  "departamento",
+  "ciudad",
+  "destino",
+  "observaciones",
+  "column_break_14",
+  "domicilio_de_envio",
+  "transporte",
+  "entregado_por"
  ],
  "fields": [
   {
@@ -42,7 +55,7 @@
   },
   {
    "fieldname": "instrucciones_especiales",
-   "fieldtype": "Long Text",
+   "fieldtype": "Small Text",
    "label": "instrucciones especiales"
   },
   {
@@ -57,11 +70,81 @@
    "fieldtype": "Link",
    "label": "Customer",
    "options": "Customer"
+  },
+  {
+   "columns": 2,
+   "fieldname": "datos_section",
+   "fieldtype": "Section Break",
+   "label": "Datos Principales"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "paquetes_de_envio",
+   "fieldtype": "Table",
+   "label": "Paquetes de Envio",
+   "options": "Enviocorto"
+  },
+  {
+   "columns": 2,
+   "fieldname": "datos_transporte_section",
+   "fieldtype": "Section Break",
+   "label": "Datos Transporte"
+  },
+  {
+   "fieldname": "departamento",
+   "fieldtype": "Select",
+   "label": "Departamento",
+   "options": "Alta Verapaz\nBaja Verapaz\nChimaltenango\nChiquimula\nEl Progreso\nEscuintla\nGuatemala Department\nHuehuetenango\nIzabal\nJalapa\nJutiapa\nPet\u00e9n\nQuetzaltenango\nQuich\u00e9\nRetalhuleu\nSacatep\u00e9quez\nSan Marcos\nSanta Rosa\nSolol\u00e1\nSuchitep\u00e9quez\nTotonicap\u00e1n\nZacapa"
+  },
+  {
+   "fieldname": "destino",
+   "fieldtype": "Small Text",
+   "label": "Destino"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "default": "CARRETERA ROOSVELT KM14.5 4-15 ZONA 3\nCOLONIA COTI\u00d3\nMIXCO,\nGUATEMALA",
+   "fieldname": "domicilio_de_envio",
+   "fieldtype": "Small Text",
+   "label": "Domicilio de envio"
+  },
+  {
+   "fieldname": "ciudad",
+   "fieldtype": "Data",
+   "label": "Ciudad"
+  },
+  {
+   "fieldname": "transporte",
+   "fieldtype": "Data",
+   "label": "Transporte"
+  },
+  {
+   "fieldname": "observaciones",
+   "fieldtype": "Small Text",
+   "label": "Observaciones"
+  },
+  {
+   "fieldname": "entregado_por",
+   "fieldtype": "Data",
+   "label": "Entregado por"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-21 13:15:14.646990",
+ "modified": "2022-03-21 14:31:55.212408",
  "modified_by": "Administrator",
  "module": "Envios Erpnext",
  "name": "Envio",
