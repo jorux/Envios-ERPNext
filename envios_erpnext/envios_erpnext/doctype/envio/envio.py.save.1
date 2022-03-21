@@ -1,0 +1,14 @@
+# Copyright (c) 2022, Jorux and contributors
+# For license information, please see license.txt
+
+# import frappe
+from frappe.model.document import Document
+
+class Envio(Document):
+	@frappe.whitelist()
+	def make_envios(customer):
+	    eee = frappe.new_doc("Envios")
+    eee.customer = customer
+    eee.instrucciones_especiales = "prueba"
+    return eee
+
