@@ -9,8 +9,9 @@
   "fecha",
   "naming_series",
   "amended_from",
-  "enviolink",
-  "instrucciones_especiales"
+  "sales_invoice",
+  "instrucciones_especiales",
+  "customer"
  ],
  "fields": [
   {
@@ -40,21 +41,28 @@
    "read_only": 1
   },
   {
-   "fieldname": "enviolink",
+   "fieldname": "instrucciones_especiales",
+   "fieldtype": "Long Text",
+   "label": "instrucciones especiales"
+  },
+  {
+   "fieldname": "sales_invoice",
    "fieldtype": "Link",
    "label": "factura",
    "options": "Sales Invoice"
   },
   {
-   "fieldname": "instrucciones_especiales",
-   "fieldtype": "Long Text",
-   "label": "instrucciones especiales"
+   "fetch_from": "sales_invoice.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-03-20 19:54:31.855922",
+ "modified": "2022-03-20 20:23:50.603598",
  "modified_by": "Administrator",
  "module": "Envios Erpnext",
  "name": "Envio",
