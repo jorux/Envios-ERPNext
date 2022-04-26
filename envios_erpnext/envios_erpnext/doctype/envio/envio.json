@@ -24,7 +24,8 @@
   "column_break_14",
   "domicilio_de_envio",
   "transporte",
-  "entregado_por"
+  "entregado_por",
+  "transportista"
  ],
  "fields": [
   {
@@ -140,11 +141,17 @@
    "fieldname": "entregado_por",
    "fieldtype": "Data",
    "label": "Entregado por"
+  },
+  {
+   "fieldname": "transportista",
+   "fieldtype": "Link",
+   "label": "Transportista",
+   "options": "Transportistas"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-21 14:31:55.212408",
+ "modified": "2022-04-26 11:41:12.851006",
  "modified_by": "Administrator",
  "module": "Envios Erpnext",
  "name": "Envio",
